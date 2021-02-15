@@ -29,7 +29,7 @@ class Event < ApplicationRecord
     end
 
     def start_of_event
-        if start_date != nil && Time.now < start_date
+        if start_date != nil && Time.now > start_date
             errors.add(:start_date, "ERROR date is impossible")
         end
     end
