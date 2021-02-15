@@ -1,4 +1,6 @@
 class Event < ApplicationRecord
+    
+
     validates :start_date, presence: true 
         validate :start_of_event
 
@@ -17,7 +19,7 @@ class Event < ApplicationRecord
 
     has_many :participations
     has_many :users, through: :participations
-    belongs_to :user
+    belongs_to :admin, class_name: "User"
 
 
     

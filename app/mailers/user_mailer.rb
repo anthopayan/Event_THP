@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-        default from: 'kevin.sassoo@gmail.com'
+        
        
         def welcome_email(user)
           #on récupère l'instance user pour ensuite pouvoir la passer à la view en @user
@@ -10,13 +10,5 @@ class UserMailer < ApplicationMailer
       
           # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
           mail(to: @user.email, subject: 'Bienvenue chez nous !') 
-        end
-
-        def user_participation(user)
-            @user = user
-            @user_particips = User.find(@user.user_id)
-            @user_event = @user.event
-            @admin = User.find(@user.event.user_id).email
-            mail(to: @admin, subject: 'Nouveau participant !')
         end
 end
