@@ -7,7 +7,7 @@ class Event < ApplicationRecord
         validate :multiple_of_5
     
     validates :title, presence: true, length: { in: 5..140 }
-    validates :description, presence :true, length: { in: 20..1000 }
+    validates :description, presence: true, length: { in: 20..1000 }
 
     validates :price, presence: true, 
         numericality: {only_integer: true, greater_than_or_equal_to: 1, 
