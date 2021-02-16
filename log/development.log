@@ -11057,3 +11057,971 @@ Migrating to CreateUsers (20210215100538)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddDeviseToUsers (20210216084803)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "remember_created_at"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "reset_password_sent_at"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210216084803"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateParticipations (20210215103151)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "participations"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215103151"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateEvents (20210215101001)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "events"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215101001"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210215100538)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215100538"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "Event_THP_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "Event_THP_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210215100538)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (28.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210215100538_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210215100538"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateEvents (20210215101001)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "start_date" timestamp, "duration" integer, "title" character varying, "description" text, "price" integer, "location" character varying, "admin_id" bigint NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210215101001_create_events.rb:3
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_events_on_admin_id" ON "events"  ("admin_id")[0m
+  ↳ db/migrate/20210215101001_create_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210215101001"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateParticipations (20210215103151)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "participations" ("id" bigserial primary key, "stripe_customer_id" character varying, "user_id" bigint, "event_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210215103151_create_participations.rb:3
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_participations_on_user_id" ON "participations"  ("user_id")[0m
+  ↳ db/migrate/20210215103151_create_participations.rb:3
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_participations_on_event_id" ON "participations"  ("event_id")[0m
+  ↳ db/migrate/20210215103151_create_participations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210215103151"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddDeviseToUsers (20210216084803)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20210216084803_add_devise_to_users.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20210216084803_add_devise_to_users.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20210216084803_add_devise_to_users.rb:15
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20210216084803_add_devise_to_users.rb:40
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20210216084803_add_devise_to_users.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216084803"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-02-16 18:25:45 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mins/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (17.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 244ms (Views: 233.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 18:25:54 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-02-16 18:25:58 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (70.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 95ms (Views: 85.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-16 18:26:20 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SZJYMR4b8YuQ0q2zRyb32fKjToKVuOeuLfoqgu3BLqjJ19XjEQRI39orI4sB/THgvHcWDx0YUB3MBwwG0FuoZA==", "user"=>{"email"=>"toto@outlook.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/mins/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "toto@outlook.fr"], ["LIMIT", 1]]
+  ↳ /home/mins/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "toto@outlook.fr"], ["encrypted_password", "$2a$12$G0ZzYfbtVVZLIzYYZ6FFYe2T0lM8zqrPAvN8zMnzkzXExxh6.W9z6"], ["created_at", "2021-02-16 17:26:20.539910"], ["updated_at", "2021-02-16 17:26:20.539910"]]
+  ↳ /home/mins/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/mins/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 260ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 18:26:20 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (3.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 18:27:00 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 18:27:03 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 18:27:04 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 18:41:12 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mins/Bureau/3mois/15_02/Event_THP/app/views/events/new.html.erb:20: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+...arams["start_date"], input type="datetime", class: 'form-con...
+...                           ^~~~
+/home/mins/Bureau/3mois/15_02/Event_THP/app/views/events/new.html.erb:20: syntax error, unexpected tLABEL
+..., input type="datetime", class: 'form-control' );@output_buf...
+...                         ^~~~~~
+):
+  
+app/views/events/new.html.erb:20: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/events/new.html.erb:20: syntax error, unexpected tLABEL
+Started GET "/events/new" for ::1 at 2021-02-16 18:41:28 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 18:50:26 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for nil:NilClass):
+    17: 
+    18:     
+    19:     <p class="label"><%= label_tag 'start_date :' %></p>
+    20:     <p <%= date_field_tag 'start_date', @event.start_date, class: "form-control" %>/p>
+    21:     <br /> <br />
+    22:   
+    23:     <p class="label"><%= label_tag 'duration :' %></p>
+  
+app/views/events/new.html.erb:20:in `block in _app_views_events_new_html_erb___4149211815962803634_20160'
+app/views/events/new.html.erb:16:in `_app_views_events_new_html_erb___4149211815962803634_20160'
+Started GET "/events/new" for ::1 at 2021-02-16 18:51:07 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for nil:NilClass):
+    17: 
+    18:     
+    19:     <p class="label"><%= label_tag 'start_date :' %></p>
+    20:     <%= date_field_tag 'start_date', @event.start_date, class: "form-control" %>
+    21:     <br /> <br />
+    22:   
+    23:     <p class="label"><%= label_tag 'duration :' %></p>
+  
+app/views/events/new.html.erb:20:in `block in _app_views_events_new_html_erb___4149211815962803634_20680'
+app/views/events/new.html.erb:16:in `_app_views_events_new_html_erb___4149211815962803634_20680'
+Started GET "/events/new" for ::1 at 2021-02-16 18:52:56 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for nil:NilClass):
+    17: 
+    18:     
+    19:     <p class="label"><%= label_tag 'start_date :' %></p>
+    20:     <%= date_field_tag 'start_date', @event.start_date, class: "form-control" %>
+    21:     <br /> <br />
+    22:   
+    23:     <p class="label"><%= label_tag 'duration :' %></p>
+  
+app/views/events/new.html.erb:20:in `block in _app_views_events_new_html_erb___4149211815962803634_26220'
+app/views/events/new.html.erb:16:in `_app_views_events_new_html_erb___4149211815962803634_26220'
+Started GET "/events/new" for ::1 at 2021-02-16 18:52:57 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for nil:NilClass):
+    17: 
+    18:     
+    19:     <p class="label"><%= label_tag 'start_date :' %></p>
+    20:     <%= date_field_tag 'start_date', @event.start_date, class: "form-control" %>
+    21:     <br /> <br />
+    22:   
+    23:     <p class="label"><%= label_tag 'duration :' %></p>
+  
+app/views/events/new.html.erb:20:in `block in _app_views_events_new_html_erb___4149211815962803634_26740'
+app/views/events/new.html.erb:16:in `_app_views_events_new_html_erb___4149211815962803634_26740'
+Started GET "/events/new" for ::1 at 2021-02-16 18:52:58 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for nil:NilClass):
+    17: 
+    18:     
+    19:     <p class="label"><%= label_tag 'start_date :' %></p>
+    20:     <%= date_field_tag 'start_date', @event.start_date, class: "form-control" %>
+    21:     <br /> <br />
+    22:   
+    23:     <p class="label"><%= label_tag 'duration :' %></p>
+  
+app/views/events/new.html.erb:20:in `block in _app_views_events_new_html_erb___4149211815962803634_27260'
+app/views/events/new.html.erb:16:in `_app_views_events_new_html_erb___4149211815962803634_27260'
+Started GET "/events/new" for ::1 at 2021-02-16 18:53:21 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (12.4ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:00:45 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (53.1ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 125ms (Views: 117.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:01:46 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:02:22 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:02:37 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:04:59 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/events" for ::1 at 2021-02-16 19:05:28 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8JG382FBgQy9OoZau5lfVPY4D6fxudJudQm8+FUigi3h8sNwpq/UHgNZCEsNaNEHQy4sxdmUPpYKQB33M4MxA==", "start_date"=>"2021-02-19T22:08", "duration"=>"50", "title"=>"Appart", "description"=>"azertyuqsdfghj", "price"=>"100", "location"=>"Lyon"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/events_controller.rb:12
+Redirected to http://localhost:3000/events/new
+Completed 302 Found in 34ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:05:28 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events" for ::1 at 2021-02-16 19:08:21 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ovd5gyCcA8Gxk9qXkP98gSDbGlSG2NJ49neC/7gPn3cisvRRL4O6lftqVK/WJLq4bg9C2Q54ZcsXiqR7hZUZuw==", "start_date"=>"2021-02-26T19:06", "duration"=>"50", "title"=>"Vvsdvdds", "description"=>"azertyuqsdfghjkwxcvbn,", "price"=>"100", "location"=>"Paris"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:12
+  [1m[36mEvent Create (1.7ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2021-02-26 19:06:00"], ["duration", 50], ["title", "Vvsdvdds"], ["description", "azertyuqsdfghjkwxcvbn,"], ["price", 100], ["location", "Paris"], ["admin_id", 1], ["created_at", "2021-02-16 18:08:21.381588"], ["updated_at", "2021-02-16 18:08:21.381588"]]
+  ↳ app/controllers/events_controller.rb:12
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:12
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:08:21 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:08:39 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:10:23 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:10:39 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/events" for ::1 at 2021-02-16 19:11:08 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUnS3HvSWlXhYM9tomp2KYB34Gk8kmLacZTMBTpMVMkBDF8OdM3jAauZQVXksbAQzqO45LQy1WmQaeqBB9bSBQ==", "start_date"=>"2021-04-14T00:15", "duration"=>"50", "title"=>"Appart", "description"=>"hfxgjngf", "price"=>"50", "location"=>"Marseille"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/events_controller.rb:12
+Redirected to http://localhost:3000/events/new
+Completed 302 Found in 11ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:11:08 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/events" for ::1 at 2021-02-16 19:11:37 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RqVICVpNxvQpHYu5rOJK//DY09hUAy+S14AqG8T7qObG4MXbVVJ/oGPkBYHqOYzGvgyLVdyjmCE2fQyf+WEuKg==", "start_date"=>"2021-06-16T00:15", "duration"=>"50", "title"=>"Vvsdvdds", "description"=>"ghigqejgbvhsjkgqyukhvbhuiyhjfgdhqyusiuhufbhgibyqu", "price"=>"50", "location"=>"Marseille"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:12
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2021-06-16 00:15:00"], ["duration", 50], ["title", "Vvsdvdds"], ["description", "ghigqejgbvhsjkgqyukhvbhuiyhjfgdhqyusiuhufbhgibyqu"], ["price", 50], ["location", "Marseille"], ["admin_id", 1], ["created_at", "2021-02-16 18:11:37.522576"], ["updated_at", "2021-02-16 18:11:37.522576"]]
+  ↳ app/controllers/events_controller.rb:12
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:12
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:11:37 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:27:05 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:28:12 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:29:21 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:29:22 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:30:15 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mins/Bureau/3mois/15_02/Event_THP/app/views/events/new.html.erb:28: syntax error, unexpected tLABEL
+...;@output_buffer.append=( class: 'form-control');@output_buff...
+...                         ^~~~~~
+):
+  
+app/views/events/new.html.erb:28: syntax error, unexpected tLABEL
+Started GET "/events/new" for ::1 at 2021-02-16 19:30:29 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:30:56 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:32:28 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:33:03 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:33:24 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:33:46 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:34:37 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:35:13 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:36:00 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:36:30 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:37:12 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:37:46 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-16 19:38:23 +0100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/new.html.erb:7
+  Rendered events/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:42:14 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:55:13 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mins/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:13
+  Rendered events/index.html.erb within layouts/application (61.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (23.0ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 500ms (Views: 463.6ms | ActiveRecord: 20.6ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddDeviseToUsers (20210216084803)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "remember_created_at"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "reset_password_sent_at"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210216084803"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateParticipations (20210215103151)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE "participations"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215103151"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateEvents (20210215101001)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "events"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215101001"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210215100538)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215100538"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(688123783648296135)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
