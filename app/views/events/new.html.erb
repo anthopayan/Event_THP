@@ -1,57 +1,63 @@
+<% flash.each do |type, msg| %>
+  <div class="alert alert-danger" role="alert">
+    <%= msg %>
+  </div>
+<% end %>
 
-<html>
-  <body>
-  <% flash.each do |type, msg| %>
-    <div class="alert alert-danger" role="alert">
-      <%= msg %>
-    </div>
+<% if user_signed_in? %>
+<div class="container">
+<div class="row">
+  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card card-signin my-5">
+      <div class="card-body">
+        <h5 class="card-title text-center">New Event</h5>
+  <!-- ... -->
+  <div id= "form">
+  <%= form_tag events_path(action: 'create'), method: "post" do %>
+
+    
+    <p class="label"><%= label_tag 'start_date :' %></p>
+    <p class="box"><%= text_field_tag 'start_date', params["start_date"], class: 'form-control' %></p>
+    <br /> <br />
+  
+    <p class="label"><%= label_tag 'duration :' %></p>
+    <p class="box"><%= text_field_tag 'duration', params["duration"], class: 'form-control' %></p>
+    <br /> <br />
+
+  
+    <p class="label"><%= label_tag 'title :' %></p>
+    <p class="box"><%= text_field_tag 'title', params["title"], class: 'form-control' %></p>
+    <br /> <br />
+
+  
+    <p class="label"><%= label_tag 'description :' %></p>
+    <p class="box"><%= text_field_tag 'description', params["description"], class: 'form-control' %></p>
+    <br /> <br />
+
+  
+    <p class="label"><%= label_tag 'price :' %></p>
+    <p class="box"><%= text_field_tag 'price', params["price"], class: 'form-control' %></p>
+    <br /> <br />
+    
+
+    <p class="label"><%= label_tag 'location :' %></p>
+    <p class="box"><%= text_field_tag 'location', params["location"], class: 'form-control' %></p>
+    <br /> <br />
+
+  
+    <button class="btn" style="background-color: #e3f2fd;" type="submit">Créer l'évènement</button>
   <% end %>
-  
-  <% if user_signed_in? %>
-  <h1>Page new </h1>
-    <!-- ... -->
-    <div id= "form">
-    <%= form_tag events_path(action: 'create'), method: "post" do %>
 
-      
-      <p class="label"><%= label_tag 'start_date :' %></p>
-      <p class="box"><%= text_field_tag 'start_date', params["start_date"] %></p>
-      <br /> <br />
-    
-      <p class="label"><%= label_tag 'duration :' %></p>
-      <p class="box"><%= text_field_tag 'duration', params["duration"] %></p>
-      <br /> <br />
+  <% else %>
+  <h1>Connectez vous Chenapan</h1>
+  <% end %>
+  </div>
+  <!-- ... -->
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
 
-    
-      <p class="label"><%= label_tag 'title :' %></p>
-      <p class="box"><%= text_field_tag 'title', params["title"] %></p>
-      <br /> <br />
-
-    
-      <p class="label"><%= label_tag 'description :' %></p>
-      <p class="box"><%= text_field_tag 'description', params["description"] %></p>
-      <br /> <br />
-
-    
-      <p class="label"><%= label_tag 'price :' %></p>
-      <p class="box"><%= text_field_tag 'price', params["price"] %></p>
-      <br /> <br />
-      
-  
-      <p class="label"><%= label_tag 'location :' %></p>
-      <p class="box"><%= text_field_tag 'location', params["location"] %></p>
-      <br /> <br />
-
-      <%= submit_tag "Créer l'évènement" %>
-      
-    <% end %>
-
-    <% else %>
-    <h1>Connectez vous Chenapan</h1>
-    <% end %>
-    </div>
-    <!-- ... -->
-
-  </body>
- 
 </html>

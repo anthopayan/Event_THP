@@ -3,6 +3,12 @@
   <p class="lead">Ici, tu pourras retrouver tous nos événements, n hésite pas à te faire un compte <3</p>
   <hr class="my-4">
 
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-success" role="notice">
+      <%= msg %>
+    </div>
+  <% end %>
+
   <% Event.all.each do |event| %>  
     <div class="card w-50">
     <div class="card-body">
@@ -13,7 +19,7 @@
       <p class="card-text">Son titre :  <%= event.title %><br/><br/></p>
       <p class="card-text">Le déroulé de cet événement :  <%= event.description %><br/><br/></p>
       
-      <a class="btn btn-primary" href="<%= event_path(event.id)%>" >Détails</a>
+      <a class="btn" style="background-color: #e3f2fd;" href="<%= event_path(event.id)%>" >Détails</a>
     
 
     </div>
