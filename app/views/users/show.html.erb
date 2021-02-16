@@ -1,10 +1,15 @@
 
 <% if user_signed_in? %>
-<h2>Bonjour user n°<%= params[:id] %>, voici ta page profil</h2>
 
-<h3>Voici tous les events que tu as créé :</h3>
+   <h2 class="text-center">Bonjour user n°<%= params[:id] %>, voici ta page profil  </h2>
+   <h3 class="text-center">Voici tous les events que tu as créés :  </h3>
 
-
+<div class="container">
+<div class="row">
+  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card card-signin my-5">
+      <div class="card-body">
+      <!-- ... -->
 <% Event.all.each do |event| %>
   <% if current_user.id == event.admin_id %>
    <p> Titre :<%= event.title %></p>
@@ -18,3 +23,9 @@
 <%else%>
 <h1> Inscris toi pour voir ce contenu </h1>
 <%end%>
+<!-- ... -->
+</div>
+</div>
+</div>
+</div>
+</div>
