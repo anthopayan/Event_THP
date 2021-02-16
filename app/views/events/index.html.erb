@@ -1,1 +1,23 @@
-<h1> Page d'accueil</h1>
+<div class="jumbotron">
+  <h1 class="display-4">Bienvenue sur notre page EventBrite !!</h1>
+  <p class="lead">Ici, tu pourras retrouver tous nos événements, n hésite pas à te faire un compte <3</p>
+  <hr class="my-4">
+
+  <% Event.all.each do |event| %>  
+    <div class="card w-50">
+    <div class="card-body">
+      <h5 class="card-title">Voici l event n° <%= event.id %><br/></h5>
+      <p class="card-text">Organisé par notre administrateur No<%= event.admin_id %><br/></p>
+      <p class="card-text">Il aura lieu le <%= event.start_date %> à la fameuse <%= event.location %> Arena<br/><br/></p>
+      <p class="card-text">Pour la modique somme de <%= event.price %> centimes d'euros !<br/><br/></p>
+      <p class="card-text">Son titre :  <%= event.title %><br/><br/></p>
+      <p class="card-text">Le déroulé de cet événement :  <%= event.description %><br/><br/></p>
+      
+      <a class="btn btn-primary" href="<%= event_path(event.id)%>" >Détails</a>
+    
+
+    </div>
+  </div>
+  <% end %>
+  <p class="lead"> Voilà, bisou !</p> 
+</div>
