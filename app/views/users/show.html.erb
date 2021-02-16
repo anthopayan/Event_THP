@@ -11,6 +11,7 @@
       <div class="card-body">
       <!-- ... -->
 <% Event.all.each do |event| %>
+  
   <% if current_user.id == event.admin_id %>
    <p> Titre :<%= event.title %></p>
    <a class="btn" style="background-color: #e3f2fd;" href="<%= event_path(event.id)%>" >Détails</a>

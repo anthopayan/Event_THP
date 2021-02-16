@@ -16,13 +16,13 @@
 
 <% finder = Event.find(params[:id]) %>
 
-        <p>Son titre :  <%= finder.title %><br/>
-        Sa description :  <%= finder.description %><br/>
-        Le nombre d inscrits : ON VERRA DEMAIN<br/>
-        Le mail du créateur :  <%= finder.admin.email %><br/>
-        Sa date de début et de fin : de <%= time_start = finder.start_date %> à <%= time_start + finder.duration %> <br/>
-        Le lieu de l événement :  <%= finder.location %> Arena<br/>
-        Son prix :  <%= finder.price %> centimes d'euros<br/>
+        <p>Son titre :  <%= finder.title %><br/><br/>
+        Sa description :  <%= finder.description %><br/><br/>
+        Le nombre d inscrits : ON VERRA DEMAIN<br/><br/>
+        Le mail du créateur :  <%= finder.admin.email %><br/><br/>
+        Sa date de début et de fin : de <%= time_start = finder.start_date %> à <%= time_start + finder.duration %> <br/><br/>
+        Le lieu de l événement :  <%= finder.location %> Arena<br/><br/>
+        Son prix :  <%= finder.price %> centimes d'euros<br/><br/>
         </p>
         <!-- ... -->
       </div>
