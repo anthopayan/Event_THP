@@ -5,6 +5,8 @@ application up and running.
 
 Things you may want to cover:
 
+https://eventbritebattethp.herokuapp.com/
+
 * Ruby version
 
 * System dependencies

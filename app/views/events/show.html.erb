@@ -1,0 +1,19 @@
+<% flash.each do |type, msg| %>
+  <div class="alert alert-success" role="notice">
+    <%= msg %>
+  </div>
+<% end %>
+<h1>Page Events </h1>
+<p>Bienvenue sur la page de l Event No<%= params[:id] %> !! <br> Tu veux plus de détails ? En voici :</p>
+
+<% finder = Event.find(params[:id]) %>
+
+<p>Son titre :  <%= finder.title %><br/>
+Sa description :  <%= finder.description %><br/>
+Le nombre d inscrits : ON VERRA DEMAIN<br/>
+Le mail du créateur :  <%= finder.admin.email %><br/>
+Sa date de début et de fin : de <%= time_start = finder.start_date %> à <%= time_start + finder.duration %> <br/>
+Le lieu de l événement :  <%= finder.location %> Arena<br/>
+Son prix :  <%= finder.price %> centimes d'euros<br/>
+
+</p>
