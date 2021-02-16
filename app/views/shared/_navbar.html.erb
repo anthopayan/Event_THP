@@ -28,7 +28,7 @@
           My Profile
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><%= link_to "My Profile", root_path, class: "dropdown-item"%></li>
+            <li><%= link_to "My Profile", user_path(current_user.id), class: "dropdown-item"%></li>
             <li><hr class="dropdown-divider"></li>
             <li><%= link_to "Log out",  destroy_user_session_path, method: :delete, class: "dropdown-item"%></li>
             
