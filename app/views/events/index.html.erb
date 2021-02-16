@@ -1,13 +1,28 @@
-<div class="jumbotron">
-  <h1 class="display-4">Bienvenue sur notre page EventBrite !!</h1>
-  <p class="lead">Ici, tu pourras retrouver tous nos événements, n hésite pas à te faire un compte <3</p>
-  <hr class="my-4">
+<% flash.each do |type, msg| %>
+  <div class="alert alert-success" role="notice">
+    <%= msg %>
+  </div>
+<% end %>
 
-  <% flash.each do |type, msg| %>
-    <div class="alert alert-success" role="notice">
-      <%= msg %>
+<div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://www.acenet.edu/PublishingImages/Interior-Page-Heroes/2018ACE-1045.JPG?RenditionID=10');
+      height: 400px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Eventbrite</h1>
+          <h4 class="mb-3">Subheading</h4>
+          <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+            >Call to action</a
+          >
+        </div>
+      </div>
     </div>
-  <% end %>
+  </div>
 
   <div id="index">
   <% Event.all.each do |event| %>  
