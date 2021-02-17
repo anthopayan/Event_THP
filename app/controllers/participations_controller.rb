@@ -20,7 +20,7 @@ begin
   })
 rescue Stripe::CardError => e
   flash[:error] = e.message
-  redirect_to new_participations_path
+  redirect_to new_event_participations_path
 end
 # After the rescue, if the payment succeeded
   end
