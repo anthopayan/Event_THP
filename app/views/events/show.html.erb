@@ -23,6 +23,7 @@
         Sa date de début et de fin : de <%= time_start = finder.start_date %> à <%= time_start + finder.duration %> <br/><br/>
         Le lieu de l événement :  <%= finder.location %> Arena<br/><br/>
         Son prix :  <%= finder.price %> centimes d'euros<br/><br/>
+        <a class="btn btn-outline-light btn-primary" role="button",<%= link_to "Participez ici", new_event_participation_path(params[:id])%></a>
         </p>
         <!-- ... -->
       </div>

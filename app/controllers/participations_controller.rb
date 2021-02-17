@@ -1,9 +1,12 @@
 class ParticipationsController < ApplicationController
   def new
+    @stripe_amount = Event.find(params[:event_id]).price * 100
+
   end
 
   def create
-    @stripe_amount = Event.find(params[:id]).price
+ 
+
 begin
   customer = Stripe::Customer.create({
   email: params[:stripeEmail],
