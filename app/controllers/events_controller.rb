@@ -23,7 +23,7 @@ class EventsController < ApplicationController
   def update
     @event_edit = Event.find(params[:id])
     if @event_edit.update(start_date: params["start_date"], duration: params["duration"], title: params["title"], description: params["description"], price: params["price"], location: params["location"], admin_id: current_user.id) 
-      redirect_to event_path(event.id)
+      redirect_to @event_edit
       flash.notice = "Event bien modifié"
     else
       render :edit
@@ -34,7 +34,7 @@ class EventsController < ApplicationController
   def destroy
     @event_destroy = Event.find(params[:id])
     @event_destroy.destroy
-    redirect_to event_participations_path(params[:id])
+    redirect_to root_path
     flash.notice = "Event bien effacé"
   end
 

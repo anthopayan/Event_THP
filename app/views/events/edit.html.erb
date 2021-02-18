@@ -14,7 +14,7 @@
   <!-- ... -->
   <div id= "form">
 
-  <%= form_tag edit_event_path(action: 'update'), method: "patch" do %>
+  <%= form_tag event_path(action: 'update'), method: "put" do %>
     
     <label for="start_date">Début de l évèvement:</label>
 		<br />Format : YYYY-MM-DD hh:mm:ss<br />
@@ -51,7 +51,7 @@
     <br /> <br />
 
   
-    <button class="btn" style="background-color: #e3f2fd;" type="submit">Modifier l'évènement</button>
+    <%= submit_tag "Update Event" %>
     <% end %>
 
   <% else %>

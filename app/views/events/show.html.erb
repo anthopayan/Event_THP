@@ -29,7 +29,12 @@
         
         <p><%= link_to 'Modifie ton événement', edit_event_path%></p>
 
-        <p><%= link_to 'Supprime ton événement', root_path%></p>  
+        <div id= "form">
+        <%= form_tag event_path(action: 'destroy'), method: "delete" do %>
+          <%= submit_tag "Supprime ton événement" %> 
+          <% end %>
+          </div>
+        
         <%end%>
         <% if user_signed_in? && !(finder.admin_id == current_user.id)%>
         <a class="btn btn-outline-light btn-primary" role="button",<%= link_to "Participez ici", new_event_participation_path(params[:id])%></a>
