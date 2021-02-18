@@ -1,0 +1,34 @@
+
+
+<% if user_signed_in? %>
+
+   <h2 class="text-center">Bonjour user n°<%= params[:event_id] %></h2>
+   <h3 class="text-center">Voici tous les events que tu as créés :  </h3>
+
+<div class="container">
+<div class="row">
+  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card card-signin my-5">
+      <div class="card-body">
+      <!-- ... -->
+<% Event.all.each do |event| %>
+  
+  <% if current_user.id == event.admin_id %>
+   <p> Titre :<%= event.title %></p>
+   <a class="btn" style="background-color: #e3f2fd;" href="<%= event_path(event.id)%>" >Détails</a>
+  
+   <% end %>
+   <% end %>
+
+
+<%else%>
+<div class="text-center">
+<h1> Inscris toi pour voir ce contenu </h1>
+</div>
+<%end%>
+<!-- ... -->
+</div>
+</div>
+</div>
+</div>
+</div>

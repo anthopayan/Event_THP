@@ -13,8 +13,8 @@
         <h5 class="card-title text-center">Nouvel évènement</h5>
   <!-- ... -->
   <div id= "form">
-  <%= form_tag events_path(action: 'create'), method: "post" do %>
 
+  <%= form_tag edit_event_path(action: 'update'), method: "patch" do %>
     
     <label for="start_date">Début de l évèvement:</label>
 		<br />Format : YYYY-MM-DD hh:mm:ss<br />
@@ -51,8 +51,8 @@
     <br /> <br />
 
   
-    <button class="btn" style="background-color: #e3f2fd;" type="submit">Créer l'évènement</button>
-  <% end %>
+    <button class="btn" style="background-color: #e3f2fd;" type="submit">Modifier l'évènement</button>
+    <% end %>
 
   <% else %>
   <div class= "text-center"

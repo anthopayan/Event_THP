@@ -4,8 +4,8 @@ class EventsController < ApplicationController
   end
 
   def new
-
   end
+
   def create
     @event_newnew = Event.new(start_date: params["start_date"], duration: params["duration"], title: params["title"], description: params["description"], price: params["price"], location: params["location"], admin_id: current_user.id) 
   
@@ -19,4 +19,23 @@ class EventsController < ApplicationController
       flash.alert = "L'évènement n'est pas correctement renseigné !"
     end
   end
+
+  def update
+    @event_edit = Event.find(params[:id])
+    if @event_edit.update(start_date: params["start_date"], duration: params["duration"], title: params["title"], description: params["description"], price: params["price"], location: params["location"], admin_id: current_user.id) 
+      redirect_to event_path(event.id)
+      flash.notice = "Event bien modifié"
+    else
+      render :edit
+      flash.alert = "Try again, la mise à jour n'est pas complète !!!"
+    end
+  end
+
+  def destroy
+    @event_destroy = Event.find(params[:id])
+    @event_destroy.destroy
+    redirect_to event_participations_path(params[:id])
+    flash.notice = "Event bien effacé"
+  end
+
 end

@@ -23,7 +23,19 @@
         Sa date de début et de fin : de <%= time_start = finder.start_date %> à <%= time_start + finder.duration %> <br/><br/>
         Le lieu de l événement :  <%= finder.location %> Arena<br/><br/>
         Son prix :  <%= finder.price %> centimes d'euros<br/><br/>
+        
+        <% if user_signed_in?  && finder.admin_id == current_user.id%>
+        <a class="btn btn-outline-light btn-primary" role="button",<%= link_to "Mon espace événement", event_participations_path(params[:id])%></a>
+        
+        <p><%= link_to 'Modifie ton événement', edit_event_path%></p>
+
+        <p><%= link_to 'Supprime ton événement', root_path%></p>  
+        <%end%>
+        <% if user_signed_in? && !(finder.admin_id == current_user.id)%>
         <a class="btn btn-outline-light btn-primary" role="button",<%= link_to "Participez ici", new_event_participation_path(params[:id])%></a>
+
+        <% end %>
+
         </p>
         <!-- ... -->
       </div>
