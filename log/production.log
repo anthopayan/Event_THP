@@ -1,0 +1,85 @@
+I, [2021-02-18T20:47:46.973651 #143409]  INFO -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5] Started GET "/" for 127.0.0.1 at 2021-02-18 20:47:46 +0100
+I, [2021-02-18T20:47:46.976894 #143409]  INFO -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5] Processing by EventsController#index as HTML
+I, [2021-02-18T20:47:46.987688 #143409]  INFO -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]   Rendering events/index.html.erb within layouts/application
+I, [2021-02-18T20:47:47.017372 #143409]  INFO -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]   Rendered events/index.html.erb within layouts/application (28.9ms)
+I, [2021-02-18T20:47:47.019581 #143409]  INFO -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5] Completed 500 Internal Server Error in 42ms
+F, [2021-02-18T20:47:47.058702 #143409] FATAL -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]   
+F, [2021-02-18T20:47:47.059226 #143409] FATAL -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « Event_THP »
+):
+F, [2021-02-18T20:47:47.060053 #143409] FATAL -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     28:   </div>
+[0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     29: 
+[0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     30:   <div id="index">
+[0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     31:   <% Event.all.each do |event| %>  
+[0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     32:     <div class="card w-50">
+[0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     33:     <div class="card-body">
+[0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]     34:       <h5 class="card-title">Voici l event n° <%= event.id %><br/></h5>
+F, [2021-02-18T20:47:47.060263 #143409] FATAL -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5]   
+F, [2021-02-18T20:47:47.060382 #143409] FATAL -- : [0d952e6f-20a5-4e7a-a67f-bdb31fa3d2c5] app/views/events/index.html.erb:31:in `_app_views_events_index_html_erb___2596362118795587486_19580'
+I, [2021-02-18T20:47:50.993447 #143409]  INFO -- : [f2f27780-da07-40ea-849b-3cb485f65fb9] Started GET "/" for 127.0.0.1 at 2021-02-18 20:47:50 +0100
+I, [2021-02-18T20:47:50.994191 #143409]  INFO -- : [f2f27780-da07-40ea-849b-3cb485f65fb9] Processing by EventsController#index as HTML
+I, [2021-02-18T20:47:50.994941 #143409]  INFO -- : [f2f27780-da07-40ea-849b-3cb485f65fb9]   Rendering events/index.html.erb within layouts/application
+I, [2021-02-18T20:47:50.998503 #143409]  INFO -- : [f2f27780-da07-40ea-849b-3cb485f65fb9]   Rendered events/index.html.erb within layouts/application (3.4ms)
+I, [2021-02-18T20:47:50.999135 #143409]  INFO -- : [f2f27780-da07-40ea-849b-3cb485f65fb9] Completed 500 Internal Server Error in 5ms
+F, [2021-02-18T20:47:51.000163 #143409] FATAL -- : [f2f27780-da07-40ea-849b-3cb485f65fb9]   
+F, [2021-02-18T20:47:51.000240 #143409] FATAL -- : [f2f27780-da07-40ea-849b-3cb485f65fb9] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « Event_THP »
+):
+F, [2021-02-18T20:47:51.000391 #143409] FATAL -- : [f2f27780-da07-40ea-849b-3cb485f65fb9]     28:   </div>
+[f2f27780-da07-40ea-849b-3cb485f65fb9]     29: 
+[f2f27780-da07-40ea-849b-3cb485f65fb9]     30:   <div id="index">
+[f2f27780-da07-40ea-849b-3cb485f65fb9]     31:   <% Event.all.each do |event| %>  
+[f2f27780-da07-40ea-849b-3cb485f65fb9]     32:     <div class="card w-50">
+[f2f27780-da07-40ea-849b-3cb485f65fb9]     33:     <div class="card-body">
+[f2f27780-da07-40ea-849b-3cb485f65fb9]     34:       <h5 class="card-title">Voici l event n° <%= event.id %><br/></h5>
+F, [2021-02-18T20:47:51.000420 #143409] FATAL -- : [f2f27780-da07-40ea-849b-3cb485f65fb9]   
+F, [2021-02-18T20:47:51.000433 #143409] FATAL -- : [f2f27780-da07-40ea-849b-3cb485f65fb9] app/views/events/index.html.erb:31:in `_app_views_events_index_html_erb___2596362118795587486_19580'
+I, [2021-02-18T20:49:00.678928 #143409]  INFO -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821] Started GET "/" for 127.0.0.1 at 2021-02-18 20:49:00 +0100
+I, [2021-02-18T20:49:00.680510 #143409]  INFO -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821] Processing by EventsController#index as HTML
+I, [2021-02-18T20:49:00.681948 #143409]  INFO -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821]   Rendering events/index.html.erb within layouts/application
+I, [2021-02-18T20:49:00.698221 #143409]  INFO -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821]   Rendered events/index.html.erb within layouts/application (15.5ms)
+I, [2021-02-18T20:49:00.702565 #143409]  INFO -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821] Completed 500 Internal Server Error in 21ms
+F, [2021-02-18T20:49:00.705273 #143409] FATAL -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821]   
+F, [2021-02-18T20:49:00.705721 #143409] FATAL -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « Event_THP »
+):
+F, [2021-02-18T20:49:00.706515 #143409] FATAL -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     28:   </div>
+[8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     29: 
+[8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     30:   <div id="index">
+[8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     31:   <% Event.all.each do |event| %>  
+[8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     32:     <div class="card w-50">
+[8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     33:     <div class="card-body">
+[8258ce6b-f8cc-48d3-bf08-fc9900a6d821]     34:       <h5 class="card-title">Voici l event n° <%= event.id %><br/></h5>
+F, [2021-02-18T20:49:00.706769 #143409] FATAL -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821]   
+F, [2021-02-18T20:49:00.706853 #143409] FATAL -- : [8258ce6b-f8cc-48d3-bf08-fc9900a6d821] app/views/events/index.html.erb:31:in `_app_views_events_index_html_erb___2596362118795587486_19580'
+I, [2021-02-18T20:49:01.887425 #143409]  INFO -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9] Started GET "/" for 127.0.0.1 at 2021-02-18 20:49:01 +0100
+I, [2021-02-18T20:49:01.888570 #143409]  INFO -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9] Processing by EventsController#index as HTML
+I, [2021-02-18T20:49:01.889750 #143409]  INFO -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9]   Rendering events/index.html.erb within layouts/application
+I, [2021-02-18T20:49:01.902507 #143409]  INFO -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9]   Rendered events/index.html.erb within layouts/application (12.0ms)
+I, [2021-02-18T20:49:01.903180 #143409]  INFO -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9] Completed 500 Internal Server Error in 14ms
+F, [2021-02-18T20:49:01.904402 #143409] FATAL -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9]   
+F, [2021-02-18T20:49:01.904623 #143409] FATAL -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « Event_THP »
+):
+F, [2021-02-18T20:49:01.905005 #143409] FATAL -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     28:   </div>
+[fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     29: 
+[fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     30:   <div id="index">
+[fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     31:   <% Event.all.each do |event| %>  
+[fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     32:     <div class="card w-50">
+[fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     33:     <div class="card-body">
+[fafbac93-7969-422d-aa58-ae3a5b0fa5a9]     34:       <h5 class="card-title">Voici l event n° <%= event.id %><br/></h5>
+F, [2021-02-18T20:49:01.905059 #143409] FATAL -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9]   
+F, [2021-02-18T20:49:01.905086 #143409] FATAL -- : [fafbac93-7969-422d-aa58-ae3a5b0fa5a9] app/views/events/index.html.erb:31:in `_app_views_events_index_html_erb___2596362118795587486_19580'
+I, [2021-02-18T20:49:05.696280 #143409]  INFO -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d] Started GET "/" for 127.0.0.1 at 2021-02-18 20:49:05 +0100
+I, [2021-02-18T20:49:05.707884 #143409]  INFO -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d] Processing by EventsController#index as HTML
+I, [2021-02-18T20:49:05.708411 #143409]  INFO -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]   Rendering events/index.html.erb within layouts/application
+I, [2021-02-18T20:49:05.711284 #143409]  INFO -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]   Rendered events/index.html.erb within layouts/application (2.8ms)
+I, [2021-02-18T20:49:05.711419 #143409]  INFO -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d] Completed 500 Internal Server Error in 3ms
+F, [2021-02-18T20:49:05.711993 #143409] FATAL -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]   
+F, [2021-02-18T20:49:05.712028 #143409] FATAL -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « Event_THP »
+):
+F, [2021-02-18T20:49:05.712119 #143409] FATAL -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     28:   </div>
+[2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     29: 
+[2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     30:   <div id="index">
+[2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     31:   <% Event.all.each do |event| %>  
+[2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     32:     <div class="card w-50">
+[2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     33:     <div class="card-body">
+[2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]     34:       <h5 class="card-title">Voici l event n° <%= event.id %><br/></h5>
+F, [2021-02-18T20:49:05.712134 #143409] FATAL -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d]   
+F, [2021-02-18T20:49:05.712147 #143409] FATAL -- : [2413d0d8-0ad2-4e1b-96c4-c9000c5ec46d] app/views/events/index.html.erb:31:in `_app_views_events_index_html_erb___2596362118795587486_19580'
