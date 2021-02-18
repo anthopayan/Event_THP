@@ -2,17 +2,27 @@
 <% if user_signed_in? %>
 
    <h2 class="text-center">Bonjour user n°<%= params[:id] %>, voici ta page profil  </h2>
-    <h3>Avatar actuel</h3>
+   <br/>
+
+    <div class="text-center">
   <%if @user.avatar.attached?%>
-    <%= image_tag @user.avatar, alt: 'avatar' %>
+
+  <%= image_tag @user.avatar, alt: 'avatar', class:"avatar" %>
+
+  
 <%else%>  
   <p>=== Il n'y a pas encore d'avatar lié à cet utilisateur ===</p>
   <%end%>
-  <h3>Changer d'avatar ?</h3>
-<%= form_tag user_avatars_path(@user), multipart: true do %>
-  <%= file_field_tag :avatar %>
-  <%= submit_tag "mettre à jour" %>
-<% end %>
+
+  <h5>Changer d'avatar ?</h5>
+    <%= form_tag user_avatars_path(@user), multipart: true do %>
+    <%= file_field_tag :avatar %>
+     <%= submit_tag "mettre à jour" %>
+  <% end %>
+  </div>
+
+
+<br/><br/>
    <h3 class="text-center">Voici tous les events que tu as créés :  </h3>
 
 <div class="container">

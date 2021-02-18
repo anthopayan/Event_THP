@@ -67,3 +67,4 @@ gem 'dotenv-rails'
 gem 'devise'
 gem 'stripe'
 gem 'mini_magick'
+
