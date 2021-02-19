@@ -3,11 +3,11 @@ module Admin
 class AdminUsersController < ApplicationController
   
   def index
-    
+    @user_index = User.all
   end
 
   def show
-    @user_index = User.all
+    
   end
   
 end

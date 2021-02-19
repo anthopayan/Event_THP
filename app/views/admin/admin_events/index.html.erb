@@ -1,0 +1,12 @@
+<h1>Event ou pas event ?</h1> 
+
+
+<% @event_index.each do |event| %>
+  Son titre :  <%= event.title %><br/><br/>
+        Sa description :  <%= event.description %><br/><br/>
+        Le nombre d inscrits : ON VERRA DEMAIN<br/><br/>
+        Le mail du créateur :  <%= event.admin.email %><br/><br/>
+        Sa date de début et de fin : de <%= time_start = event.start_date %> à <%= time_start + event.duration %> <br/><br/>
+        Le lieu de l événement :  <%= event.location %> Arena<br/><br/>
+        Son prix :  <%= event.price %> centimes d'euros<br/><br/>
+  <% end%>
