@@ -30,14 +30,25 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><%= link_to "My Profile", user_path(current_user.id), class: "dropdown-item"%></li>
             <li><hr class="dropdown-divider"></li>
+            
+
+            </ul>
+          </li>
             <li><%= link_to "Log out",  destroy_user_session_path, method: :delete, class: "dropdown-item"%></li>
             
 
           </ul>
         </li>
        <% end %>
+
+       <% if user_signed_in? && current_user.is_admin? %>
+        <li class="nav-item">
+        <%= link_to "Dashboard", admin_index_path, class:"nav-link"%>
+        </li>
+        <%end%>
+
     </ul>
-    
+  
   </div>
 </div>
 
