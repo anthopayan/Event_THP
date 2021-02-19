@@ -1,0 +1,2 @@
+module AdminEventHelper
+end

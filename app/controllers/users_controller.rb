@@ -12,5 +12,11 @@ class UsersController < ApplicationController
       flash[:danger]= "Bien essayé petit malin ! ;P"
     end
   end
+
+  def index
+    @user_index = User.all
+  end
+
+  
   
 end
